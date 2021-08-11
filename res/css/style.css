@@ -1,0 +1,194 @@
+/*-----Variables---------*/
+/*General*/
+/*Paragraph*/
+/*title*/
+/*-----Slide------*/
+/* line 17, ../../../../../../../../../../../../../Users/greciazatarain/Documents/GitHub/epiphany/res/scss/style.scss */
+.image-container {
+  position: relative;
+}
+
+/* line 18, ../../../../../../../../../../../../../Users/greciazatarain/Documents/GitHub/epiphany/res/scss/style.scss */
+.statement {
+  opacity: 0;
+  position: absolute;
+  left: 0;
+  top: 0;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+/* line 19, ../../../../../../../../../../../../../Users/greciazatarain/Documents/GitHub/epiphany/res/scss/style.scss */
+.statement.active {
+  opacity: 1;
+}
+
+/*-----Desktop Styles-----*/
+/* line 22, ../../../../../../../../../../../../../Users/greciazatarain/Documents/GitHub/epiphany/res/scss/style.scss */
+.hide {
+  opacity: 0;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+/* line 23, ../../../../../../../../../../../../../Users/greciazatarain/Documents/GitHub/epiphany/res/scss/style.scss */
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+}
+
+/* line 27, ../../../../../../../../../../../../../Users/greciazatarain/Documents/GitHub/epiphany/res/scss/style.scss */
+.title {
+  padding: 18px;
+  font-size: 24px;
+  font-weight: 700;
+  color: #531582;
+}
+
+/* line 33, ../../../../../../../../../../../../../Users/greciazatarain/Documents/GitHub/epiphany/res/scss/style.scss */
+.done {
+  position: relative;
+}
+
+/* line 34, ../../../../../../../../../../../../../Users/greciazatarain/Documents/GitHub/epiphany/res/scss/style.scss */
+.thanks {
+  opacity: 0;
+  position: absolute;
+  color: #531582;
+  font-size: 40px;
+  top: 40%;
+  font-weight: bold;
+  width: 100%;
+  left: 0;
+}
+
+/* line 35, ../../../../../../../../../../../../../Users/greciazatarain/Documents/GitHub/epiphany/res/scss/style.scss */
+.thanks.visible {
+  opacity: 1;
+}
+
+/* line 36, ../../../../../../../../../../../../../Users/greciazatarain/Documents/GitHub/epiphany/res/scss/style.scss */
+.image-background {
+  background: url("images/general-background.jpg");
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* line 44, ../../../../../../../../../../../../../Users/greciazatarain/Documents/GitHub/epiphany/res/scss/style.scss */
+.image-background::after {
+  content: "";
+  position: absolute;
+  background: #000;
+  opacity: 0.5;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+}
+
+/* line 54, ../../../../../../../../../../../../../Users/greciazatarain/Documents/GitHub/epiphany/res/scss/style.scss */
+.survey-container {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+  background: #e8e8e8;
+  border-radius: 8px;
+  padding: 0 40px;
+  box-sizing: border-box;
+  z-index: 1;
+  position: relative;
+}
+
+/* line 67, ../../../../../../../../../../../../../Users/greciazatarain/Documents/GitHub/epiphany/res/scss/style.scss */
+.survey-container .image-container {
+  overflow: hidden;
+  border-radius: 8px;
+  height: 280px;
+  box-shadow: 0 1px 8px 2px #dcdcdc;
+}
+
+/* line 73, ../../../../../../../../../../../../../Users/greciazatarain/Documents/GitHub/epiphany/res/scss/style.scss */
+.survey-container .statement {
+  width: 100%;
+}
+
+/*Survey Answers*/
+/* line 80, ../../../../../../../../../../../../../Users/greciazatarain/Documents/GitHub/epiphany/res/scss/style.scss */
+.options-list {
+  display: flex;
+  padding: 30px;
+}
+
+/* line 85, ../../../../../../../../../../../../../Users/greciazatarain/Documents/GitHub/epiphany/res/scss/style.scss */
+.options-list .option {
+  padding: 10px;
+  width: 30%;
+  float: left;
+  cursor: pointer;
+}
+
+/* line 91, ../../../../../../../../../../../../../Users/greciazatarain/Documents/GitHub/epiphany/res/scss/style.scss */
+.options-list .option-image-container {
+  box-shadow: 0 1px 8px 2px #dcdcdc;
+  border-radius: 5px;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  background: #fff;
+}
+
+/* line 97, ../../../../../../../../../../../../../Users/greciazatarain/Documents/GitHub/epiphany/res/scss/style.scss */
+.options-list .option-image-container:hover {
+  background: #c5c2e0;
+}
+
+/* line 101, ../../../../../../../../../../../../../Users/greciazatarain/Documents/GitHub/epiphany/res/scss/style.scss */
+.options-list .option img {
+  width: 100%;
+  padding: 5px;
+  box-sizing: border-box;
+}
+
+/* line 106, ../../../../../../../../../../../../../Users/greciazatarain/Documents/GitHub/epiphany/res/scss/style.scss */
+.options-list .option p {
+  margin-top: 10px;
+  color: #706880;
+  font-size: 15px;
+}
+
+/*-----Responsive Styles-----*/
+@media only screen and (max-width: 700px), only screen and (max-device-width: 700px) {
+  /* line 117, ../../../../../../../../../../../../../Users/greciazatarain/Documents/GitHub/epiphany/res/scss/style.scss */
+  .title {
+    font-size: 20px;
+  }
+  /* line 118, ../../../../../../../../../../../../../Users/greciazatarain/Documents/GitHub/epiphany/res/scss/style.scss */
+  .survey-container {
+    width: auto;
+    max-width: 100%;
+    margin: 20px;
+    padding: 0 20px;
+  }
+  /* line 124, ../../../../../../../../../../../../../Users/greciazatarain/Documents/GitHub/epiphany/res/scss/style.scss */
+  .survey-container .image-container {
+    height: 250px;
+  }
+  /* line 127, ../../../../../../../../../../../../../Users/greciazatarain/Documents/GitHub/epiphany/res/scss/style.scss */
+  .options-list {
+    padding: 10px 0;
+  }
+  /* line 128, ../../../../../../../../../../../../../Users/greciazatarain/Documents/GitHub/epiphany/res/scss/style.scss */
+  .options-list .option {
+    padding: 8px;
+  }
+  /* line 129, ../../../../../../../../../../../../../Users/greciazatarain/Documents/GitHub/epiphany/res/scss/style.scss */
+  .option p {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
